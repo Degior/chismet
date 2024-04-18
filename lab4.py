@@ -1,5 +1,5 @@
 import numpy as np
-import math
+import sympy as sp
 
 
 def func(x):
@@ -66,8 +66,6 @@ for h in hs:
 print("\nUsing Gauss's method:")
 print(0.27777 * func(2.1127) + 0.44444 * func(2.5) + 0.27779 * func(2.8873))
 
-import numpy as np
-import sympy as sp
 
 x_sym = sp.symbols('x')
 f_sym = sp.sin(1 + sp.Pow(x_sym, 2))
